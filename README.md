@@ -117,6 +117,7 @@ Make sure your Python environment is **activated** before running cmake:
 
 ```bash
 make -j 8
+make install python
 ```
 
 If you hit CUDA compiler errors, try:
@@ -124,6 +125,7 @@ If you hit CUDA compiler errors, try:
 ```bash
 sed -i 's/ -Xcudafe --diag_suppress=unrecognized_pragma,--diag_suppress=128//' build/CMakeFiles/lmp.dir/flags.make7
 make -j 8
+make install python
 ```
 
 ---
